@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery review</title>
+  <script src="../js/jquery-3.5.1.min.js"></script>
+  <link rel="stylesheet" href="../css/reset.css">
+  <style>
+    .a{font-size: 3em;}
+  </style>
+</head>
+<body>
+  <h1 class="a" id="sample">Hello jQuery</h1>
+  <script>
+   $('#sample')
+   console.log(document.getElementById('sample'))
+   console.log($('#sample'))
+  //  $('#sample').click(function(){
+  //    alert('안녕하세요');
+  //  })
+  //  document.getElementById('sample').click();
+  document.getElementById('sample').addEventListener('click', function(){
+    alert('안녕하세요');
+  });
+  
+  </script>
+</body>
+</html>
